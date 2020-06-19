@@ -15,7 +15,7 @@ In this exercise, you will walk through some of the Azure Governance capabilitie
 ## Exercise 2: Getting started with On-Premise Kubernetes Cluster
 In the provided lab environment, you would already have one single node kubernetes cluster deployed through Minikube running on-prem in a Hyper-V host. In this exercise, we’ll explore how to verify if the cluster is running or not and access the cluster.
 
-## Exercise 3: Connect On-Prem Servers to Azure with Arc
+## Exercise 3: Connect On-Prem Clusters to Azure with Arc
 Azure Arc extends Azure Resource Manager capabilities to Kubernetes clusters on any infrastructure across on-premises, multi-cloud, and edge. Azure Arc-enabled Kubernetes is currently in public preview.
 
 In this exercise, you will browse through the on-prem kubernetes cluster which is hosted on Hyper-V and connect the Cluster to Azure Arc using the az connectk8s command.
