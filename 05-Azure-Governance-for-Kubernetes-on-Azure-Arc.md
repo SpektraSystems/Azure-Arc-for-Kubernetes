@@ -15,7 +15,7 @@ Azure Policy extends Gatekeeper v3, an admission controller webhook for Open Pol
 
    > **Note**: Replace <subscriptionId> with your subscription ID, <rg> with the Azure Arc enabled Kubernetes cluster's resource group, and <clusterName> with the name of the Azure Arc enabled Kubernetes cluster. Keep track of the returned values for appId, password, and tenant for the installation steps. 
 	
-   > **Note**: Alternatively, you can get the full url to be provided in scopes by navigating to portal.azure.com -> Azure-ARC-RG -> Azure ARc enabled Kubernetes -> Properties -> ResourceID
+   > **Note**: Alternatively, you can get the full url to be provided in scopes by navigating to portal.azure.com -> Azure-ARC-RG -> Azure Arc enabled Kubernetes -> Properties -> ResourceID
 
     ```
     az ad sp create-for-rbac --role "Policy Insights Data Writer (Preview)" --scopes "/subscriptions/<subscriptionId>/resourceGroups/<rg>/providers/Microsoft.Kubernetes/connectedClusters/<clusterName>"
