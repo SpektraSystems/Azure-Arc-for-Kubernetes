@@ -53,11 +53,11 @@ In this task, you will check the existing Kubernetes cluster and verify if the c
    ```
    ![](./images/arc-07.png) 
  
- 2. Within the VS Code from the **file** menu open the file from the folder C:\LabFiles **configurewslkubectl.sh**
+2. Within the VS Code from the **file** menu open the file from the folder C:\LabFiles **configurewslkubectl.sh**
   
     ![](./images/arc-08.png)
     
- 3. Run the commands to **install Kubectl in WSL** one by one
+3. Run the commands to **install Kubectl in WSL** one by one
    
     ![](./images/arc-16.png)
 
