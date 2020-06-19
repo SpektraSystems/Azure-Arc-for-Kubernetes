@@ -51,7 +51,7 @@ In this task, you will check the existing Kubernetes cluster and verify if the c
 
 3. Run all the commands at once **Set Kubectl config on WSL**
  
-   ![](./images/arc-15.png)
+   ![](./images/arc-0040.png)
    
  4. Now you can run the command 'exit' to exit out of WSL and be back in the powershell terminal.
  
