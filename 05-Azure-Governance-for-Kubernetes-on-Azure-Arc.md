@@ -33,7 +33,7 @@ Azure Policy extends Gatekeeper v3, an admission controller webhook for Open Pol
 
    ![](./images/arc-0004.png)
       
-      Note: In below command, replace the following values with those gathered above.
+     > **Note**: In below command, replace the following values with those gathered above.
    <AzureArcClusterResourceId> with your Azure Arc enabled Kubernetes cluster resource Id. For example: 	/subscriptions/<subscriptionId>/resourceGroups/<rg>/providers/Microsoft.Kubernetes/connectedClusters/<clusterName>
        <ServicePrincipalAppId> with app Id of the service principal created during prerequisites.
        <ServicePrincipalPassword> with password of the service principal created during prerequisites.
@@ -45,14 +45,14 @@ Azure Policy extends Gatekeeper v3, an admission controller webhook for Open Pol
 
 5. Now, to validate that the add-on installation was successful and that the azure-policy and gatekeeper pods are running, run the following commands.
     
+   > **Note**: azure-policy pod is installed in kube-system namespace
      ```
-    # azure-policy pod is installed in kube-system namespace
 	kubectl get pods -n kube-system
      ```
    ![](./images/arc-0005.png)
    
+   > **Note**: gatekeeper pod is installed in gatekeeper-system namespace
     ```
-    # gatekeeper pod is installed in gatekeeper-system namespace
 	kubectl get pods -n gatekeeper-system
     ```
    ![](./images/arc-0006.png)
@@ -65,7 +65,7 @@ Policies can be applied to ARC enabled Kubernetes the same way they are applied 
 
    ![](./images/arc-0013.png)
 
-2. From the **Azure Arc Enabled Kuberenetes* blade, click on **Go to Policies** under Configure Azure Policy.
+2. From the **Azure Arc Enabled Kuberenetes** blade, click on **Go to Policies** under Configure Azure Policy.
 
    ![](./images/arc-0014.png)
 
@@ -108,7 +108,7 @@ Policies can be applied to ARC enabled Kubernetes the same way they are applied 
 
    ![](./images/arc-0031.png)
 
-**Note**: If you find **non-compliant**, you will need to update the configuration file to apply the tag and after sometime you will see the complaint state changed to **Compliant**
+   > **Note**: If you find **non-compliant**, you will need to update the configuration file to apply the tag and after sometime you will see the complaint state changed to **Compliant**
 
     
 ## Task 3: Tag your Azure Arc enabled Kubernetes
