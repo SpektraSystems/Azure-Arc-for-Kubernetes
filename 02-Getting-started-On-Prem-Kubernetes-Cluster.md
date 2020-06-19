@@ -32,17 +32,8 @@ In this task, you will check the existing Kubernetes cluster and verify if the c
       minikube start
       ```
    
-## Task 2: Configuring WSL environment on Windows
-   
-1. Open the **Ubuntu 18.04** as administrator
-   
-    ![](./images/arc-05.png)  
-    
-2. When prompted for username and Password provide the username as **arcadmin** and Password as **123456** and wait until the application is installed.
- 
-    ![](./images/arc-06.png) 
   
-## Task 3: Connect to Kubernetes cluster using WSL
+## Task 2: Connect to Kubernetes cluster using WSL
 
 1. Open the Visual studio code once again and run the following command in the terminal
    
@@ -50,6 +41,8 @@ In this task, you will check the existing Kubernetes cluster and verify if the c
    wsl
    ```
    ![](./images/arc-07.png) 
+   
+   > **Note**: When prompted for password, provide **123456** as password. Username will be arcadmin
  
 2. Within the VS Code from the **file** menu, open the file **configurewslkubectl.sh** from the folder **C:\LabFiles**
   
