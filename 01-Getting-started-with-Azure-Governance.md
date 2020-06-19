@@ -64,7 +64,9 @@ Understanding how to create and manage policies in Azure is important for stayin
   * Create and assign an initiative definition to track compliance for multiple resources
   * Resolve a non-compliant or denied resource
   * Implement a new policy across an organization
+  
 If you would like to assign a policy to identify the current compliance state of your existing resources, the QuickStart articles go over how to do so.
+
 1. Go to your **Resource group** and click on the **Policies** under Settings. Click on **Compliance** and then check if there is any assignment on current scope. New policy assignments can be done through **Assign policy** and **Assign Initiative** options, Initiative can be a group of policies. Click on **Assign policy**.
 
    ![](./images/arc-0039.png)
