@@ -25,18 +25,16 @@ In this task, you will check the existing Kubernetes cluster and verify if the c
    
    ![](./images/arc-04.png) 
    
-   >Note: If the cluster status is **Stopped**,Run the following commands
+   > **Note**: Only, If the cluster status is **Stopped** run the following commands
    
-   ```
-   minikube delete
-   ```
+      ```
+      minikube delete
+      minikube start
+      ```
    
-   ```
-   minikube start
-   ```
 ## Task 2: Configuring WSL environment on Windows
    
- 1. Open the **Ubuntu 18.04** as a administrator
+ 1. Open the **Ubuntu 18.04** as administrator
    
     ![](./images/arc-05.png)  
     
