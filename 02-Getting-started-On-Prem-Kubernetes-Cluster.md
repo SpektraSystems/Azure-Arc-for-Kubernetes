@@ -34,11 +34,11 @@ In this task, you will check the existing Kubernetes cluster and verify if the c
    
 ## Task 2: Configuring WSL environment on Windows
    
- 1. Open the **Ubuntu 18.04** as administrator
+1. Open the **Ubuntu 18.04** as administrator
    
     ![](./images/arc-05.png)  
     
- 2. When prompted for username and Password provide the username as **arcadmin** and Password as **123456** and wait until the application is installed.
+2. When prompted for username and Password provide the username as **arcadmin** and Password as **123456** and wait until the application is installed.
  
     ![](./images/arc-06.png) 
   
@@ -51,7 +51,7 @@ In this task, you will check the existing Kubernetes cluster and verify if the c
    ```
    ![](./images/arc-07.png) 
  
-2. Within the VS Code from the **file** menu open the file from the folder C:\LabFiles **configurewslkubectl.sh**
+2. Within the VS Code from the **file** menu, open the file **configurewslkubectl.sh** from the folder **C:\LabFiles**
   
     ![](./images/arc-08.png)
     
