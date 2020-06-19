@@ -48,19 +48,12 @@ In this task, you will check the existing Kubernetes cluster and verify if the c
   
     ![](./images/arc-08.png)
     
-3. Run the commands to **install Kubectl in WSL** one by one
-   
-    ![](./images/arc-16.png)
 
-4. Run the commands to **Install Helm in WSL** one command followed by next
- 
-   ![](./images/arc-17.png)
- 
-5. Run all the commands at once **Set Kubectl config on WSL**
+3. Run all the commands at once **Set Kubectl config on WSL**
  
    ![](./images/arc-15.png)
    
- 6. Now you can run the command 'exit' to exit out of WSL and be back in the powershell terminal.
+ 4. Now you can run the command 'exit' to exit out of WSL and be back in the powershell terminal.
  
    ```
    exit
