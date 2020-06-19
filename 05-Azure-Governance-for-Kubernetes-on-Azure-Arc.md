@@ -34,19 +34,15 @@ Azure Policy extends Gatekeeper v3, an admission controller webhook for Open Pol
    ![](./images/arc-0003.png)
 
 4. Run the following commands in Powershell to install the Azure Policy Add-on repo to Helm.
-
-   ![](./images/arc-0004.png)
       
      > **Note**: In below command, replace the following values with those gathered above.
-   <AzureArcClusterResourceId> with your Azure Arc enabled Kubernetes cluster resource Id. 
-    > For example: /subscriptions/<subscriptionId>/resourceGroups/<rg>/providers/Microsoft.Kubernetes/connectedClusters/<clusterName>
-       <ServicePrincipalAppId> with app Id of the service principal created during prerequisites.
-       <ServicePrincipalPassword> with password of the service principal created during prerequisites.
-       <ServicePrincipalTenantId> with tenant of the service principal created during prerequisites.
    
-   ```
-   helm install azure-policy-addon azure-policy/azure-policy-addon-arc-clusters --set azurepolicy.env.resourceid=<AzureArcClusterResourceId> --set azurepolicy.env.clientid=<ServicePrincipalAppId> --set azurepolicy.env.clientsecret=<ServicePrincipalPassword> --set azurepolicy.env.tenantid=<ServicePrincipalTenantId>
-   ```
+     ```
+       helm install azure-policy-addon azure-policy/azure-policy-addon-arc-clusters --set azurepolicy.env.resourceid=<AzureArcClusterResourceId> --set azurepolicy.env.clientid=<ServicePrincipalAppId> --set azurepolicy.env.clientsecret=<ServicePrincipalPassword> --set azurepolicy.env.tenantid=<ServicePrincipalTenantId>
+     ```
+     
+   ![](./images/arc-0004.png)
+
 
 5. Now, to validate that the add-on installation was successful and that the azure-policy and gatekeeper pods are running, run the following commands.
     
