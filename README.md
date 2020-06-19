@@ -30,5 +30,5 @@ The Git repository can contain any valid Kubernetes resources, including Namespa
 ## Exercise 5: Azure Governance for Azure Arc Connected Machine
 In this exercise, you will perform Role assignment, Policy assignment, Tag the Azure Arc Enabled Kubernetes and check Activity logs of resource group and azure arc resource.
 
-## Exercise 6: Update Configuration of the Kubernetes CLuster
+## Exercise 6: Update Configuration of the Kubernetes Cluster
 In this exercise, you will update the configuration in the repository which have linked to our connected cluster and verify if cluster is getting updated
