@@ -35,7 +35,7 @@ Azure Policy extends Gatekeeper v3, an admission controller webhook for Open Pol
 
 4. Run the following commands in Powershell to install the Azure Policy Add-on repo to Helm.
       
-     > **Note**: In below command, replace the following values with those gathered above.
+     > **Note**: In below command, substitute with the values gathered above.
    
      ```
        helm install azure-policy-addon azure-policy/azure-policy-addon-arc-clusters --set azurepolicy.env.resourceid=<AzureArcClusterResourceId> --set azurepolicy.env.clientid=<ServicePrincipalAppId> --set azurepolicy.env.clientsecret=<ServicePrincipalPassword> --set azurepolicy.env.tenantid=<ServicePrincipalTenantId>
