@@ -22,7 +22,7 @@ In this exercise, you will deploy a sample kubernetes app using az k8sconfigurat
 
    ![](./images/arc-0023.png) 
    
-      >Wait for 5 mins before performing the next step
+     > Note: Wait for 5 mins before performing the next step
 
 ## Task 3: Validate the sourceControlConfiguration
 
@@ -31,7 +31,7 @@ In this exercise, you will deploy a sample kubernetes app using az k8sconfigurat
    ```
    az k8sconfiguration show --resource-group Azure-Arc-XXXXXX --name cluster-config --cluster-name AzureArcAKSCluster1 --cluster-type connectedClusters
    ```
-   Note that the sourceControlConfiguration resource is updated with compliance status, messages, and debugging information in the output.
+     > Note: that the sourceControlConfiguration resource is updated with compliance status, messages, and debugging information in the output.
 
    The output should be as shown:
 
@@ -53,7 +53,7 @@ In this exercise, you will deploy a sample kubernetes app using az k8sconfigurat
   
    ![](./images/azure-arc-11.png) 
    
- 2. The flux operator will be deployed to cluster-config namespace, as directed by our sourceControlConfig:
+2. The flux operator will be deployed to cluster-config namespace, as directed by our sourceControlConfig:
       
     ```
     kubectl -n cluster-config get deploy  -o wide
@@ -68,6 +68,7 @@ In this exercise, you will deploy a sample kubernetes app using az k8sconfigurat
    ```
    kubectl -n team-a get cm -o yaml
    ```
+   
    ```
    kubectl -n itops get all
    ```
