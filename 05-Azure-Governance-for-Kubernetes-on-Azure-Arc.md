@@ -7,9 +7,9 @@ You can assign the in-Built policies to enforce configurations on Azure Arc enab
 
 Azure Policy extends Gatekeeper v3, an admission controller webhook for Open Policy Agent (OPA), to apply at-scale enforcements and safeguards on your clusters in a centralized, consistent manner. Azure Policy makes it possible to manage and report on the compliance state of your Kubernetes clusters from one place. The add-on enacts the following functions:
 
-     - Checks with Azure Policy service for policy assignments to the cluster.
-     - Deploys policy definitions into the cluster as constraint template and constraint custom resources.
-     - Reports auditing and compliance details back to Azure Policy service.
+   - Checks with Azure Policy service for policy assignments to the cluster.
+   - Deploys policy definitions into the cluster as constraint template and constraint custom resources.
+   - Reports auditing and compliance details back to Azure Policy service.
 
 1. Assign 'Policy Insights Data Writer (Preview)' role assignment to the Azure Arc enabled Kubernetes cluster. Replace <subscriptionId> with your subscription ID, <rg> with the Azure Arc enabled Kubernetes cluster's resource group, and <clusterName> with the name of the Azure Arc enabled Kubernetes cluster. Keep track of the returned values for appId, password, and tenant for the installation steps. 
 
@@ -34,7 +34,8 @@ Azure Policy extends Gatekeeper v3, an admission controller webhook for Open Pol
    ![](./images/arc-0004.png)
       
      > **Note**: In below command, replace the following values with those gathered above.
-   <AzureArcClusterResourceId> with your Azure Arc enabled Kubernetes cluster resource Id. For example: 	/subscriptions/<subscriptionId>/resourceGroups/<rg>/providers/Microsoft.Kubernetes/connectedClusters/<clusterName>
+   <AzureArcClusterResourceId> with your Azure Arc enabled Kubernetes cluster resource Id. 
+    > For example: /subscriptions/<subscriptionId>/resourceGroups/<rg>/providers/Microsoft.Kubernetes/connectedClusters/<clusterName>
        <ServicePrincipalAppId> with app Id of the service principal created during prerequisites.
        <ServicePrincipalPassword> with password of the service principal created during prerequisites.
        <ServicePrincipalTenantId> with tenant of the service principal created during prerequisites.
