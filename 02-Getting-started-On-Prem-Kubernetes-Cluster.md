@@ -49,7 +49,7 @@ In this task, you will check the existing Kubernetes cluster and verify if the c
     ![](./images/arc-08.png)
     
 
-3. Run all the commands at once **Set Kubectl config on WSL**
+3. Copy and run all the commands under text **## Set Kubectl config on WSL ##.. ** on WSL terminal
  
    ![](./images/arc-0040.png)
    
