@@ -84,7 +84,7 @@ Policies can be applied to ARC enabled Kubernetes the same way they are applied 
 
 6. Click **Next** at the bottom of the window.
 
-7. Provide  **Cluster1** against List of label field and Click **Next**
+7. Provide  **app** against List of label field and Click **Next**
 
      ![](./images/arc-0029.png)
    
