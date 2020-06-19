@@ -88,7 +88,7 @@ Policies can be applied to ARC enabled Kubernetes the same way they are applied 
 
      ![](./images/arc-0029.png)
    
-8. Select the **Create a Managed Identity** check box and the click **Next** again
+8. Select the **Create a Managed Identity** check box and then click **Next** again
 
      ![](./images/arc-0018.png)
 
@@ -128,7 +128,7 @@ Policies can be applied to ARC enabled Kubernetes the same way they are applied 
     ClusterNumber | `1`
     ClusterHost | `HypervVm`
 
-5. After saving them they should look like this.&nbsp;&nbsp;
+5. After saving them they should look like this
 
      ![](./images/arc-0026.png)
  
