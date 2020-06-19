@@ -10,10 +10,12 @@ Azure Arc extends Azure Resource Manager capabilities to Linux and Windows serve
    This will launch a browser,Login with the credentials provided in the environment details page
    
    ![](./images/arc-0000.png) 
+   
+   > **Note**: If the browser doesn't pop up, on the task bar, check for Edge chromium browser icon and open it.
 
 2. Connect the Kubernetes cluster to Azure Arc by executing the following command:
 
-   > Note: Replace the XXXXXX with the deploymentID provided in the environment details page
+   > Note: Replace the XXXXXX with the deploymentID provided in the environment details section on Lab Environment tab on the right.
 
 
      ```
@@ -32,7 +34,7 @@ In this task, you will verify if the Kubernetes cluster is connected to Azure Ar
 
 1. Verify whether the cluster is connected by running the following command:
    
-   > Note: Replace the XXXXXX with the deploymentID provided in the environment details page
+   > Note: Replace the XXXXXX with the deploymentID provided in the environment details section on Lab Environment tab on the right.
 
 
     ```
@@ -41,7 +43,7 @@ In this task, you will verify if the Kubernetes cluster is connected to Azure Ar
      
    ![](./images/arc-0021.png)
    
-2. You can also View this resource on the Azure portal. Once you have the portal open in your browser, navigate to the resource group and there will be a resource with type **Azure Arc enabled Kubernetes resource**
+2. You can also View this resource on the Azure portal. Navigate to https://portal.azure.com, login with the credentials provided in the Lab Environment Tab on the right. Once you have the portal open in your browser, navigate to the resource group and there will be a resource with type **Azure Arc enabled Kubernetes resource**
 
    ![](./images/arc-0013.png)
 
