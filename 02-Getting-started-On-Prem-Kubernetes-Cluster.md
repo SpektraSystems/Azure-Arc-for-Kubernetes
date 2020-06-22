@@ -1,10 +1,10 @@
 # Exercise 2: Getting started with On-Prem Kubernetes Cluster
-In the provided lab environment, you would already have one Windows 10 machine running with Kubernetes Cluster already deployed and running. In this exercise, we’ll connect to the VM and check the existing Kubernetes Cluster
+In the provided lab environment, you would already have one Windows 10 machine running with Kubernetes Cluster already deployed and running. In this exercise, we’ll connect to the VM and verify the existing Kubernetes Cluster
 
 ## Task 1: Verify existing Kubernetes Cluster
 In this task, you will check the existing Kubernetes cluster and verify if the cluster is up and running. 
 
-1. Type Visual Studio Code in the search bar on the bottom left corner of the VM, Open **Visual Studio Code** option that comes up
+1. Type Visual Studio Code in the search bar on the bottom left corner of the VM, Open **Visual Studio Code** from the option that comes up or Click on Visual Studio Code icon on the Desktop.
 
    ![](./images/arc-01.png) 
 
