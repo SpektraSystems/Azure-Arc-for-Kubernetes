@@ -19,7 +19,9 @@ Azure Arc extends Azure Resource Manager capabilities to Linux and Windows serve
 
 
    ```
-   az connectedk8s connect --name AzureArcAKSCluster1 --resource-group Azure-Arc-XXXXXX -l eastus
+   
+        az connectedk8s connect --name AzureArcAKSCluster1 --resource-group Azure-Arc-XXXXXX -l eastus
+   
    ```
    
    > Note: This command will take around 20 mins to complete the execution
@@ -38,7 +40,9 @@ In this task, you will verify if the Kubernetes cluster is connected to Azure Ar
 
 
     ```
-     az connectedk8s list -g Azure-Arc-XXXXXX -o table  
+    
+        az connectedk8s list -g Azure-Arc-XXXXXX -o table
+     
     ```
      
    ![](./images/arc-0021.png)
