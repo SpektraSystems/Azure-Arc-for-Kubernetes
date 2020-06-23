@@ -18,9 +18,9 @@ Azure Arc extends Azure Resource Manager capabilities to Linux and Windows serve
    > Note: Replace the XXXXXX with the deploymentID provided in the environment details section on Lab Environment tab on the right.
 
 
-     ```
-      az connectedk8s connect --name AzureArcAKSCluster1 --resource-group Azure-Arc-XXXXXX -l eastus
-     ```
+   ```
+   az connectedk8s connect --name AzureArcAKSCluster1 --resource-group Azure-Arc-XXXXXX -l eastus
+   ```
    
    > Note: This command will take around 20 mins to complete the execution
    
