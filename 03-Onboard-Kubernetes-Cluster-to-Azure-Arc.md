@@ -18,10 +18,8 @@ Azure Arc extends Azure Resource Manager capabilities to Linux and Windows serve
    > Note: Replace the XXXXXX with the deploymentID provided in the environment details section on Lab Environment tab on the right.
 
 
-   ```
-   
-        az connectedk8s connect --name AzureArcAKSCluster1 --resource-group Azure-Arc-XXXXXX -l eastus
-   
+   ```  
+   az connectedk8s connect --name AzureArcAKSCluster1 --resource-group Azure-Arc-XXXXXX -l eastus   
    ```
    
    > Note: This command will take around 20 mins to complete the execution
@@ -39,11 +37,9 @@ In this task, you will verify if the Kubernetes cluster is connected to Azure Ar
    > Note: Replace the XXXXXX with the deploymentID provided in the environment details section on Lab Environment tab on the right.
 
 
-    ```
-    
-        az connectedk8s list -g Azure-Arc-XXXXXX -o table
-     
-    ```
+   ```
+   az connectedk8s list -g Azure-Arc-XXXXXX -o table
+   ```
      
    ![](./images/arc-0021.png)
    
