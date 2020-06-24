@@ -12,7 +12,7 @@ Azure Arc-enabled Kubernetes supports industry-standard SSL to secure data in tr
 
 In this exercise, you will walk through some of the Azure Governance capabilities including Azure Activity Logs, Resource tags and policies. We’ll be trying out these capabilities with Azure resources and then extend to Azure Arc enabled Kubernetes later during the lab.  
  
-## [Exercise 2: Getting started with On-Premise Kubernetes Cluster](#02-Getting-started-On-Prem-Kubernetes-Cluster.md )
+## [Exercise 2: Getting started with On-Premise Kubernetes Cluster](02-Getting-started-On-Prem-Kubernetes-Cluster.md )
 In the provided lab environment, you would already have one single node kubernetes cluster deployed through Minikube running on-prem in a Hyper-V host. In this exercise, we’ll explore how to verify if the cluster is running or not and access the cluster.
 
 ## Exercise 3: Connect On-Prem Clusters to Azure with Arc
