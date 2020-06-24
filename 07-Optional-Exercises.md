@@ -15,11 +15,9 @@ In this exercise, we will see how to configure and use Helm with Azure Arc enabl
     ```
     ![](./images/arc-000.png) 
     
-2.  For this exercise, you can use the following sample repository: https://github.com/Azure/arc-helm-demo.git
-
+2.  For this exercise, you will use the following sample repository: https://github.com/Azure/arc-helm-demo.git
 
     ![](./images/arc-000.png)  
-
 
 3.  This is the structure of the Git Repo:
 
@@ -38,9 +36,8 @@ In this exercise, we will see how to configure and use Helm with Azure Arc enabl
     ```
     ![](./images/arc-000.png)  
     
-3.  In the git repo we have two directories, one containing a Helm chart and one containing the releases config. In the releases/prod directory the azure-vote-app.yaml contains the HelmRelease config
-
-    
+3.  In the git repo we have two directories, one containing a Helm chart and one containing the releases config. In the releases/prod directory the azure-vote-app.yaml contains the HelmRelease config.
+ 
 4.  Run the following command in Powershell to link the connected cluster to the git repository:
 
     ```
