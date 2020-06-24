@@ -22,11 +22,12 @@ Azure Arc extends Azure Resource Manager capabilities to Linux and Windows serve
    az connectedk8s connect --name AzureArcAKSCluster1 --resource-group Azure-Arc-XXXXXX -l eastus   
    ```
    
-   > Note: This command will take around 20 mins to complete the execution
-   
    The output should be similar as shown:
    
    ![](./images/arc-0020.png) 
+   
+   > Note: It takes around 2-3 mins for command to complete at which point the cluster is onboarded and ARM Id associated with cluster is available. After that it takes a few more mins (around 5 mins) to sync-up cluster metadata (agent version, K8s version, number of nodes).
+   
 
 ## Task 2: Verify if the Kubernetes cluster is connected to Azure Arc
 
