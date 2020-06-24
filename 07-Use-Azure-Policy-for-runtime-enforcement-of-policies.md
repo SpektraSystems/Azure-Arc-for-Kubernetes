@@ -1,5 +1,5 @@
-# Exercise 7: Azure Governance for Kubernetes on Azure Arc
-In this exercise, you will perform Role assignment, Policy assignment, Tag the Azure Arc Enabled Kubernetes and check Activity logs of resource group and azure arc resource.
+# Exercise 7: Use Azure Policy for runtime enforcement of policies on Azure Arc Enabled Kubernetes
+In this exercise, you will install Azure Policy Add-on for Azure Arc enabled Kubernetes to manage Policy assignment and also, you will Tag the Azure Arc Enabled Kubernetes and check Activity logs of resource group and azure arc resource.
 
 You can assign the in-Built policies to enforce configurations on Azure Arc enabled Kubernetes Clusters. You can filter the Clusters and apply the policies based on Tags.
 
