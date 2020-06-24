@@ -3,7 +3,7 @@ Helm is an open-source packaging tool that helps you install and manage the life
 
 The Helm operator provides an extension to Flux that automates Helm Chart releases. A Chart release is described through a Kubernetes custom resource named HelmRelease. Flux synchronizes these resources from git to the cluster, and the Helm operator makes sure Helm charts are released as specified in the resources.
 
-In this exercise, we will see how to configure and use Helm with Azure Arc enabled Kubernetes
+In this exercise, you will see how to configure and use Helm with Azure Arc enabled Kubernetes
 
 ## Task 1: Use GitOps with Helm for an Azure Arc-enabled cluster configuration
 
