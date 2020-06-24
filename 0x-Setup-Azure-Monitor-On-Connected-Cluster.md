@@ -74,14 +74,15 @@ This is required for the workspaceResourceId parameter when you run the command 
     
 10.  Then Click on the Cluster that is listed 
 
-    ![](./images/arc-0048.png) 
+     ![](./images/arc-0048.png) 
 
 11.  On the blade that comes up, you 
  
     ```
     Set
     ```
-    ![](./images/arc-0043.png) 
+    
+   ![](./images/arc-0043.png) 
     
 12.  On the monitor page, scroll down and Click on **View monitored clusters** button 
  
