@@ -64,7 +64,7 @@ To create a remediation task, follow these steps:
   
    ![](./images/arc-0051.png)
 
-3. All deployIfNotExists and modify policy assignments with non-compliant resources are included on the **Policies to remediate** tab and data table. **Click on a policy with resources that are non-compliant**. The New remediation task page opens.
+3. All deployIfNotExists and modify policy assignments with non-compliant resources are included on the **Policies to remediate** tab and data table. **Click on “[Preview]:Deploy GitOps to Kubernetes cluster” policy**. The New remediation task page opens.
   
    ![](./images/arc-0045.png)
 
