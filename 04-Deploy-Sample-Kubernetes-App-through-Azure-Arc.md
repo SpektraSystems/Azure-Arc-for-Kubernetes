@@ -1,6 +1,6 @@
 # Exercise 4: Setup GitOps workflow on connected cluster
 
-In this exercise, you will deploy a sample kubernetes app using az k8sconfiguration command and gitops and also update the configuration in the repository which you have linked to connected cluster and verify if cluster is getting updated.
+In this exercise, you will deploy a sample kubernetes app using az k8sconfiguration command and gitops and also update the configuration in the repository which you have linked to connected cluster and verify if cluster is getting updated based on the changes made.
 
 ## Task 1: Create a Configuration
 
