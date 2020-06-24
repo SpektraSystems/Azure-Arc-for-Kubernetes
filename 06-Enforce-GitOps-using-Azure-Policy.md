@@ -26,13 +26,14 @@ Policies can be applied to ARC enabled Kubernetes the same way they are applied 
 6. Click **Next** at the bottom of the window.
 
 7. Provide the following details under **Parameters** tab and Click **Next**
-   - Configuration resource name: cluster-config
-   - Operator resource name: cluster-config
-   - Operator namespace: cluster-config
-   - Operator scope: cluster
-   - Operator type: Flux
-   - Operator Parameters: --git-readonly
-   - Repository URL: https://github.com/<your personal github account name>/arc-k8s-demo 
+   - Configuration resource name: **cluster-config**
+   - Operator resource name: **cluster-config**
+   - Operator namespace: **cluster-config**
+   - Operator scope: **cluster**
+   - Operator type: **Flux**
+   - Operator Parameters: **--git-readonly**
+   - Repository URL: The forked repo of **https://github.com/Azure/arc-k8s-demo**
+     >Example: https://github.com/personal github account name/arc-k8s-demo
    - Set the **Enable helm** option to **false**
    - **Leave the other options set to default**
      
@@ -60,14 +61,15 @@ To create a remediation task, follow these steps:
    ![](./images/arc-0050.png)
 
 2. Select **Remediation** on the left side of the Azure **Policy** page.
+   ![](./images/arc-0051.png)
 
 3. All deployIfNotExists and modify policy assignments with non-compliant resources are included on the **Policies to remediate** tab and data table. **Click on a policy with resources that are non-compliant**. The New remediation task page opens.
   ![](./images/arc-0045.png)
 
-4. On the **New remediation task** page, filter the resources to remediate by using the **Scope** ellipses to pick child resources from where the policy is assigned (including down to the individual resource objects). Additionally, use the Locations drop-down to further filter the resources. Only resources listed in the table will be remediated.
+4. On the **New remediation task** page, filter the resources to remediate by using the **Scope** ellipses and select **Kubernetes Cluster** from where the policy is assigned   Additionally, use the Locations drop-down to further filter the resources. Only resources listed in the table will be remediated.
   ![](./images/arc-0046.png)
 
-5. Begin the remediation task once the resources have been filtered by clicking **Remediate**. The policy compliance page opens to the Remediation tasks tab to show the state of the tasks **in progress**. Deployments created by the remediation task begin right away.
+5. The policy compliance page opens to the Remediation tasks tab to show the state of the tasks **in progress**. Deployments created by the remediation task begin right away.
 
    ![](./images/arc-0047.png)
 
