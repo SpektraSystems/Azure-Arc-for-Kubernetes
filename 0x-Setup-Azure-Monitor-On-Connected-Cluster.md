@@ -30,7 +30,7 @@ This is required for the workspaceResourceId parameter when you run the command 
     ```
     ![](./images/arc-0043.png)   
     
-3.  Provide Log Analytics Workspace Id and Azure Arc Cluster ID in the following commands:
+3.  Provide Log Analytics Workspace Id and Azure Arc Cluster ID in the following commands, keep $kubeContext and $proxyEndpoint as "" :
  
     ```
     $azureArcClusterResourceId = "Update Azure Arc Enabled Kubernetes Id here"
