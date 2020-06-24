@@ -1,4 +1,4 @@
-# Exercise 7: Optional - Setting up GitOps Workflow with a repo having Helm Charts
+# Exercise 8: Optional - Setting up GitOps Workflow with a repo having Helm Charts
 Helm is an open-source packaging tool that helps you install and manage the lifecycle of Kubernetes applications. Similar to Linux package managers such as APT and Yum, Helm is used to manage Kubernetes charts, which are packages of preconfigured Kubernetes resources.
 
 The Helm operator provides an extension to Flux that automates Helm Chart releases. A Chart release is described through a Kubernetes custom resource named HelmRelease. Flux synchronizes these resources from git to the cluster, and the Helm operator makes sure Helm charts are released as specified in the resources.
