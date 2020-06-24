@@ -55,7 +55,7 @@ In this exercise, we will see how to configure and use Helm with Azure Arc enabl
 6.  Run the following command in Powershell to verify if the application is up and running:
 
     ```
-    kubectl get svc/azure-vote-front -n prod
+    kubectl get svc azure-vote-front -n prod
     ```
     ![](./images/arc-0032.png)  
     
