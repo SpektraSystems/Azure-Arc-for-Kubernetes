@@ -49,7 +49,7 @@ In this task, you will check the existing Kubernetes cluster and verify if the c
     ![](./images/arc-08.png)
     
 
-3. Copy and run all the commands under text **## Set Kubectl config on WSL ##.. ** on WSL terminal
+3. Copy and run all the commands under text ** ## Set Kubectl config on WSL ##.. ** on WSL terminal
  
    ![](./images/arc-0040.png)
    
@@ -59,6 +59,6 @@ In this task, you will check the existing Kubernetes cluster and verify if the c
    exit
    ```
  
- 7. You can chose to use any of the following methods -  Powershell through Visual Studio Code or throught direct Powershell terminal from the desktop for performing the remaining exercises
+ > Note: You can chose to use any of the following methods -  Powershell through Visual Studio Code or throught direct Powershell terminal from the desktop for performing the remaining exercises
 
-In this exercise, you explored about how to WSL and Windows Powershell to check if Kubernetes cluster is running in Hyper-V. In the next exercise, you will explore on onboarding the Kubernetes Clusters to Azure Arc.
+In this exercise, you explored about how to use WSL and Windows Powershell to check if Kubernetes cluster is running in Hyper-V. In the next exercise, you will explore on onboarding the Kubernetes Clusters to Azure Arc.
