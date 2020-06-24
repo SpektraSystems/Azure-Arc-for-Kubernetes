@@ -56,7 +56,7 @@ This is required for the workspaceResourceId parameter when you run the command 
  
     ![](./images/arc-0045.png)  
     
-7.  After you've enabled monitoring, it might take about 15 minutes before you can view health metrics for the cluster.
+7.  After you've enabled monitoring, it may take some time to establish monitoring data flow for newly created clusters. Please allow at least 10-15 minutes for data to appear for your cluster.
  
 8.  Open a new tab in browser in the VM and navigate to 
  
@@ -64,7 +64,7 @@ This is required for the workspaceResourceId parameter when you run the command 
     https://aka.ms/azmon-containers
     ```
     
-    This will take you to the Monitor page.
+    This will take you to the Monitoring page.
     
     ![](./images/arc-0046.png)     
     
