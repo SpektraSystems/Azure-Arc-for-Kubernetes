@@ -38,5 +38,5 @@ In this exercise, you will setup Azure Monitor on connected clusters and you can
 ## Exercise 7: Use Azure Policy for runtime enforcement of policies on Azure Arc Enabled Kubernetes
 In this exercise, you will install Azure Policy Add-on for Azure Arc enabled Kubernetes to manage Policy assignment and also, you will Tag the Azure Arc Enabled Kubernetes and check Activity logs of resource group and azure arc resource.
 
-## Exercise 8: Setting up GitOps Workflow with a repo having Helm Charts [Optional]
+## Exercise 8: [Optional] Setting up GitOps Workflow with a repo having Helm Charts 
 In this exercise, you will see how to configure and use Helm with Azure Arc enabled Kubernetes
