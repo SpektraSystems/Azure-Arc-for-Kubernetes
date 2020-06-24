@@ -1,4 +1,4 @@
-# Exercise : Setup Azure Monitor On Connected Cluster
+# Exercise 6 : Setup Azure Monitor On Connected Cluster
 
 Azure Monitor for containers provides rich monitoring experience for the Azure Kubernetes Service (AKS) and AKS Engine clusters. With Azure Monitor for containers, you can use the performance charts and health status to monitor the workload of Kubernetes clusters
 In this exercise, we will see how to enable monitoring of your Kubernetes clusters hosted outside of Azure that are enabled with Azure Arc, to achieve a similar monitoring experience.
