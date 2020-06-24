@@ -13,14 +13,14 @@ This is required for the workspaceResourceId parameter when you run the command 
     ```
     az resource list --resource-type Microsoft.OperationalInsights/workspaces -o json --query [].id
     ```
-    ![](./images/arc-0041.png)   
+    ![](./images/arc-00041.png)   
 
 
 ## Task2: Enable monitoring using PowerShell
 
 1.  Open **Windows Powershell** from the Desktop 
 
-    ![](./images/arc-0042.png) 
+    ![](./images/arc-00042.png) 
 
 2.  Run the following command in Powershell to login to Azure Portal using Az Powershell Module. When Prompted for Username/Password, provide the details from Lab Environment Tab on the right.
  
@@ -28,7 +28,7 @@ This is required for the workspaceResourceId parameter when you run the command 
     Set-ExecutionPolicy -ExecutionPolicy Bypass -Force
     Connect-AzAccount
     ```
-    ![](./images/arc-0043.png)   
+    ![](./images/arc-00043.png)   
     
 3.  Provide Log Analytics Workspace Id and Azure Arc Cluster ID in the following commands, keep $kubeContext and $proxyEndpoint as "" :
  
@@ -50,11 +50,11 @@ This is required for the workspaceResourceId parameter when you run the command 
     ```
     .\enable-monitoring.ps1 -clusterResourceId $azureArcClusterResourceId -kubeContext $kubeContext -workspaceResourceId $logAnalyticsWorkspaceResourceId -proxyEndpoint $proxyEndpoint
     ```
-    ![](./images/arc-0044.png)  
+    ![](./images/arc-00044.png)  
     
 6.  Once the executing is complete, you will see the output as shown below
  
-    ![](./images/arc-0045.png)  
+    ![](./images/arc-00045.png)  
     
 7.  After you've enabled monitoring, it may take some time to establish monitoring data flow for newly created clusters. Please allow at least 10-15 minutes for data to appear for your cluster.
  
@@ -66,15 +66,15 @@ This is required for the workspaceResourceId parameter when you run the command 
     
     This will take you to the Monitoring page.
     
-    ![](./images/arc-0046.png)     
+    ![](./images/arc-00046.png)     
     
 9.  On the monitor page, scroll down and Click on **View monitored clusters** button 
  
-    ![](./images/arc-0047.png)  
+    ![](./images/arc-00047.png)  
     
 10.  Then Click on the Cluster that is listed 
 
-     ![](./images/arc-0048.png) 
+     ![](./images/arc-00048.png) 
 
 11.  On the blade that comes up, you can see six tabs:
 
@@ -93,17 +93,17 @@ This is required for the workspaceResourceId parameter when you run the command 
      - Active pod count
     
     
-   ![](./images/arc-0049.png) 
+   ![](./images/arc-00049.png) 
     
 12.  Switch to the Nodes tab and the row hierarchy follows the Kubernetes object model, which starts with a node in your cluster. Expand the node to view one or more pods running on the node. If more than one container is grouped to a pod, they're displayed as the last row in the hierarchy. You also can view how many non-pod-related workloads are running on the host if the host has processor or memory pressure.
  
-   ![](./images/arc-0050.png) 
+   ![](./images/arc-00050.png) 
     
 13.  In the selector, select Controllers. Here you can view the performance health of your controllers and Container Instances virtual node controllers or virtual node pods not connected to a controller.
  
-   ![](./images/arc-0051.png) 
+   ![](./images/arc-00051.png) 
 
 14.  In the selector, select Containers. Here you can view the performance health of your Azure Kubernetes and Azure Container Instances containers. From a container, you can drill down to a pod or node to view performance data filtered for that object.
  
-   ![](./images/arc-0052.png) 
+   ![](./images/arc-00052.png) 
     
