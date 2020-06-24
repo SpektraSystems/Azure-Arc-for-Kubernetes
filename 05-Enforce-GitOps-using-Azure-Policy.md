@@ -1,4 +1,4 @@
-# Exercise 6: Azure Governance for Kubernetes on Azure Arc
+# Exercise 5: Azure Governance for Kubernetes on Azure Arc
 
 ## Task 1: Apply Policy
 Policies can be applied to ARC enabled Kubernetes the same way they are applied to Microsoft Azure virtual machines. Policies can be applied to ensure the Azure resources are compliant with established practices such as ensuring that all resources are tagged with an owner. Policies can be applied to ensure the Azure arc enabled clusters are compliant such as ensuring the cluster configuration is set through a specific repo or enforcing a specific label on a pod.
