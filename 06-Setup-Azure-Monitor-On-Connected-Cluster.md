@@ -93,18 +93,18 @@ This is required for the workspaceResourceId parameter when you run the command 
         - Node count
         - Active pod count   
     
-   ![](./images/arc-00053.png)
-   ![](./images/arc-00054.png) 
+   ![](./images/arc-0053.png)
+   ![](./images/arc-0054.png) 
     
 12.  Switch to the Nodes tab and the row hierarchy follows the Kubernetes object model, which starts with a node in your cluster. Expand the node to view one or more pods running on the node. If more than one container is grouped to a pod, they're displayed as the last row in the hierarchy. You also can view how many non-pod-related workloads are running on the host if the host has processor or memory pressure.
  
-   ![](./images/arc-00055.png) 
+   ![](./images/arc-0055.png) 
     
 13.  In the selector, select Controllers. Here you can view the performance health of your controllers and Container Instances virtual node controllers or virtual node pods not connected to a controller.
  
-   ![](./images/arc-00056.png) 
+   ![](./images/arc-0056.png) 
 
 14.  In the selector, select Containers. Here you can view the performance health of your Azure Kubernetes and Azure Container Instances containers. From a container, you can drill down to a pod or node to view performance data filtered for that object.
  
-   ![](./images/arc-00057.png) 
+   ![](./images/arc-0057.png) 
     
