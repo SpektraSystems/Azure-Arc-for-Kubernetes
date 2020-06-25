@@ -100,7 +100,7 @@ This is required for the workspaceResourceId parameter when you run the command 
  
    ![](./images/arc-0055.png) 
     
-13.  In the selector, select Controllers. Here you can view the performance health of your controllers and Container Instances virtual node controllers or virtual node pods not connected to a controller.
+13.  In the selector, select Controllers. Here you can view the performance health of your controllers.
  
    ![](./images/arc-0056.png) 
 
