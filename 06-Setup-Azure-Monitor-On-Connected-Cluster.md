@@ -39,15 +39,16 @@ This is required for the workspaceResourceId parameter when you run the command 
     $proxyEndpoint = ""
     ```
     
-4.  Run the following command to change the directory to C:\LabFiles
+4.  Run the following command to change the directory to C:\
  
     ```
-    cd C:\LabFiles
+    cd C:\
     ```
     
-5.  Now, Run the following command to enable monitoring
+5.  Now, Run the following commands to enable monitoring
  
     ```
+    wget https://aka.ms/enable-monitoring-powershell-script -outfile enable-monitoring.ps1
     .\enable-monitoring.ps1 -clusterResourceId $azureArcClusterResourceId -kubeContext $kubeContext -workspaceResourceId $logAnalyticsWorkspaceResourceId -proxyEndpoint $proxyEndpoint
     ```
     ![](./images/arc-00044.png)  
@@ -78,32 +79,32 @@ This is required for the workspaceResourceId parameter when you run the command 
 
 11.  On the blade that comes up, you can see six tabs:
 
-    - What's New 
-    - Cluster
-    - Health (Preview)
-    - Nodes
-    - Controllers
-    - Containers
+        - What's New 
+        - Cluster
+        - Health (Preview)
+        - Nodes
+        - Controllers
+        - Containers
 
    Select the Cluster tab and it displays four line performance charts that show key performance metrics of your cluster:
     
-     - Node CPU utilization
-     - Node memory utilization
-     - Node count
-     - Active pod count
+        - Node CPU utilization
+        - Node memory utilization
+        - Node count
+        - Active pod count   
     
-    
-   ![](./images/arc-00049.png) 
+   ![](./images/arc-00053.png)
+   ![](./images/arc-00054.png) 
     
 12.  Switch to the Nodes tab and the row hierarchy follows the Kubernetes object model, which starts with a node in your cluster. Expand the node to view one or more pods running on the node. If more than one container is grouped to a pod, they're displayed as the last row in the hierarchy. You also can view how many non-pod-related workloads are running on the host if the host has processor or memory pressure.
  
-   ![](./images/arc-00050.png) 
+   ![](./images/arc-00055.png) 
     
 13.  In the selector, select Controllers. Here you can view the performance health of your controllers and Container Instances virtual node controllers or virtual node pods not connected to a controller.
  
-   ![](./images/arc-00051.png) 
+   ![](./images/arc-00056.png) 
 
 14.  In the selector, select Containers. Here you can view the performance health of your Azure Kubernetes and Azure Container Instances containers. From a container, you can drill down to a pod or node to view performance data filtered for that object.
  
-   ![](./images/arc-00052.png) 
+   ![](./images/arc-00057.png) 
     
