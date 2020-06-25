@@ -8,7 +8,7 @@ To connect a Kubernetes cluster to Azure, the cluster administrator needs to dep
 
 Azure Arc-enabled Kubernetes supports industry-standard SSL to secure data in transit. Also, data is stored encrypted at rest in an Azure Cosmos DB database to ensure data confidentiality.
 
-## Exercise 1: Getting started with Azure Governance 
+## [Exercise 1: Getting started with Azure Governance](https://github.com/SpektraSystems/Azure-Arc-for-Kubernetes/blob/master/01-Getting-started-with-Azure-Governance.md)
 
 In this exercise, you will walk through some of the Azure Governance capabilities including Azure Activity Logs, Resource tags and policies. We’ll be trying out these capabilities with Azure resources and then extend to Azure Arc enabled Kubernetes later during the lab.  
  
