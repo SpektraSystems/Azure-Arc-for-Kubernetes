@@ -10,10 +10,11 @@ In this exercise, you will see how to configure and use Helm with Azure Arc enab
 1.  Run the following command in Powershell window to set the environment variable which will be used in the next steps. Replace in the two commands the name of the Resource  group where Azure Arc enabled Kubernetes cluster is deployed and the name of ARC enabled Kubernetes Cluster Name
 
     ```
-    $RESOURCE_GROUP=<Resource_Group_Name>
-    $CLUSTER_NAME=<ARCenabledKubernetesClusterName>
+    $RESOURCE_GROUP="<Resource_Group_Name>"
+    $CLUSTER_NAME="<ARCenabledKubernetesClusterName>"
     ```
-    
+   ![](./images/arc-0063.png) 
+
 2.  For this exercise, you will use the following sample repository: https://github.com/Azure/arc-helm-demo.git 
 
 3.  This is the structure of the Git Repo:
@@ -39,18 +40,34 @@ In this exercise, you will see how to configure and use Helm with Azure Arc enab
     ```
     az k8sconfiguration create --name azure-voting-app --resource-group  $RESOURCE_GROUP --cluster-name $CLUSTER_NAME --operator-instance-name azure-voting-app --operator-namespace prod --enable-helm-operator --helm-operator-version='0.6.0' --helm-operator-params='--set helm.versions=v3' --repository-url https://github.com/Azure/arc-helm-demo.git --operator-params='--git-readonly --git-path=releases/prod' --scope namespace --cluster-type connectedClusters 
     ``` 
-    
+   ![](./images/arc-0064.png) 
+   
+   >Note: The ComplianceState should change to Installed and it will take around 5 mins
+
 5.  To validate if the sourceControlConfiguration was created, run the following command:
 
     ```
     az k8sconfiguration show --resource-group $RESOURCE_GROUP --name azure-voting-app --cluster-name $CLUSTER_NAME --cluster-type connectedClusters 
     ```
-    
-6.  Run the following command in Powershell to verify if the application is up and running:
+   ![](./images/arc-0065.png) 
+
+6.  Now open another Powershell windows and run the following command:
 
     ```
-    kubectl get svc azure-vote-front -n prod
+    minikube tunnel 
     ```
-    
-7.  Copy the external IP address from the output above and open it in a browser.
-  
+   ![](./images/arc-0068.png) 
+   
+>Note: Services of type LoadBalancer can be exposed via the minikube tunnel command. It must be run in a separate terminal window to keep the LoadBalancer running. Ctrl-C in the terminal can be used to terminate the process at which time the network routes will be cleaned up.
+
+
+7.  Run the following command in Powershell to verify if the application is up and running:
+
+    ```
+    kubectl get svc azure-vote-front
+    ```
+   ![](./images/arc-0067.png) 
+
+8.  Copy the external IP address from the output above and open it in a browser.
+
+   ![](./images/arc-0066.png) 
