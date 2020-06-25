@@ -12,15 +12,15 @@ Azure Arc-enabled Kubernetes supports industry-standard SSL to secure data in tr
 
 In this exercise, you will walk through some of the Azure Governance capabilities including Azure Activity Logs, Resource tags and policies. We’ll be trying out these capabilities with Azure resources and then extend to Azure Arc enabled Kubernetes later during the lab.  
  
-## Exercise 2: Getting started with On-Premise Kubernetes Cluster
+## [Exercise 2: Getting started with On-Premise Kubernetes Cluster](https://github.com/SpektraSystems/Azure-Arc-for-Kubernetes/blob/master/02-Getting-started-with-On-Prem-Kubernetes-Cluster.md)
 In the provided lab environment, you would already have one single node kubernetes cluster deployed through Minikube running on-prem in a Hyper-V host. In this exercise, we’ll explore how to verify if the cluster is running or not and access the cluster.
 
-## Exercise 3: Onboard Kubernetes Cluster to Azure Arc
+## [Exercise 3: Onboard Kubernetes Cluster to Azure Arc](https://github.com/SpektraSystems/Azure-Arc-for-Kubernetes/blob/master/03-Onboard-Kubernetes-Cluster-to-Azure-Arc.md)
 Azure Arc extends Azure Resource Manager capabilities to Kubernetes clusters on any infrastructure across on-premises, multi-cloud, and edge. Azure Arc-enabled Kubernetes is currently in public preview.
 
 In this exercise, you will browse through the on-prem kubernetes cluster which is hosted on Hyper-V and connect the Cluster to Azure Arc using the az connectk8s command.
 
-## Exercise 4: Setup GitOps workflow on connected Cluster
+## [Exercise 4: Setup GitOps workflow on connected Cluster](https://github.com/SpektraSystems/Azure-Arc-for-Kubernetes/blob/master/04-Setup-GitOps-workflow-on-connected-cluster.md)
 In this exercise, you will deploy a sample kubernetes app using az k8sconfiguration command and link the cluster to a git repository containing the sourceControlConfiguration and also update the configuration in the repository which you have linked to connected cluster and verify if cluster is getting updated based on the changes made. 
 
 The configuration is described declaratively in .yaml files and stored in Git. An agent watches the Git repo for changes and applies them. The same agent also periodically assures that the cluster state matches the state declared in the Git repo and returns the cluster to the desired state if any unmanaged changes have occurred.
@@ -29,14 +29,14 @@ The Azure Arc enabled Kubernetes config-agent running in your cluster is respons
 
 The Git repository can contain any valid Kubernetes resources, including Namespaces, ConfigMaps, Deployments, DaemonSets, etc. It may also contain Helm charts for deploying applications. A common set of scenarios includes defining a baseline configuration for your organization, which might include common RBAC roles and bindings, monitoring or logging agents, or cluster-wide services.
 
-## Exercise 5: Enforce GitOps using Azure Policy
+## [Exercise 5: Enforce GitOps using Azure Policy](https://github.com/SpektraSystems/Azure-Arc-for-Kubernetes/blob/master/05-Enforce-GitOps-using-Azure-Policy.md)
 In this exercise, you will see how to use Azure Policy to enforce that each Microsoft.Kubernetes/connectedclusters resource or Git-Ops enabled Microsoft.ContainerService/managedClusters resource has specific Microsoft.KubernetesConfiguration/sourceControlConfigurations applied on it.
 
-## Exercise 6: Setup Azure Monitor On Connected Cluster
+## [Exercise 6: Setup Azure Monitor On Connected Cluster](https://github.com/SpektraSystems/Azure-Arc-for-Kubernetes/blob/master/06-Setup-Azure-Monitor-On-Connected-Cluster.md)
 In this exercise, you will setup Azure Monitor on connected clusters and you can use the performance charts and health status to monitor the workload of Kubernetes clusters
 
-## Exercise 7: Use Azure Policy for runtime enforcement of policies on Azure Arc Enabled Kubernetes
+## [Exercise 7: Use Azure Policy for runtime enforcement of policies on Azure Arc Enabled Kubernetes](https://github.com/SpektraSystems/Azure-Arc-for-Kubernetes/blob/master/07-Use-Azure-Policy-for-runtime-enforcement-of-policies.md)
 In this exercise, you will install Azure Policy Add-on for Azure Arc enabled Kubernetes to manage Policy assignment and also, you will Tag the Azure Arc Enabled Kubernetes and check Activity logs of resource group and azure arc resource.
 
-## Exercise 8: [Optional] Setting up GitOps Workflow with a repo having Helm Charts 
+## [Exercise 8: [Optional] Setting up GitOps Workflow with a repo having Helm Charts](https://github.com/SpektraSystems/Azure-Arc-for-Kubernetes/blob/master/08-Optional-Setting-up-GitOps-Workflow-with-a-repo-having-Helm-Charts.md) 
 In this exercise, you will see how to configure and use Helm with Azure Arc enabled Kubernetes
